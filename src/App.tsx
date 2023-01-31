@@ -1,8 +1,6 @@
 import { JSXElementConstructor, ReactElement, ReactFragment, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import { Routes, Route } from "react-router-dom"
-import {Link} from "react-router-dom"
 
 const PRODUCTS = [
   {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
@@ -130,8 +128,10 @@ function App() {
 
   return (
     <div className="App" style={{width: '100%' , display: 'flex' , justifyContent: 'center'}}>
-      <div style={{flex: '0 0 20%'}}>
-          <Link to="reducer">Understanding Reducers</Link>
+      
+      <div style={{flex: "0 0 20%"}}>
+         <a href="/"><h3>Home</h3></a>
+         <a href="/tasks"><h3>Understanding Reducers</h3></a>
       </div>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
