@@ -132,6 +132,7 @@ function App() {
       <div style={{flex: "0 0 20%"}}>
          <a href="/"><h3>Home</h3></a>
          <a href="/tasks"><h3>Understanding Reducers</h3></a>
+         <a href="/musings">Country list with debouncing</a>
       </div>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">

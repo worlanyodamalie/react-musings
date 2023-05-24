@@ -4,6 +4,7 @@ import App from './App'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import TaskApp from './tasks/TaskManager'
+import { CountriesDebounce , Dashboard } from './musings/index'
 
 const router = createBrowserRouter([{
   path: "/",
@@ -12,6 +13,10 @@ const router = createBrowserRouter([{
 {
   path: '/tasks',
   element: <TaskApp />
+},
+{
+  path: '/musings',
+  element: <Dashboard />
 }
 ])
 
